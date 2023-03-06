@@ -1,0 +1,83 @@
+#h1{
+    background-color: #091921;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+.box2{
+    height: 0.5vh;
+    background-color:blueviolet;
+}
+#box{
+    position: relative;
+    margin: auto;
+    width: 32vw;
+    height: 69.5vh;
+    /* border: 2px solid green; */
+    background-image: url('clock4.jpg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+#hour{
+    width:0.3vw;
+    height:15vh;
+    background-color: red;
+    position:absolute;
+    top:145px;
+    left:244px;
+    /* display: none; */
+}
+#minute{
+    width:0.3vw;
+    height:18vh;
+    background-color:aqua;
+    position:absolute;
+    top:124px;
+    left:244px;
+    /* display: none; */
+}
+#second{
+    width:0.3vw;
+    height:22vh;
+    background-color: greenyellow;
+    position:absolute;
+    top:95px;
+    left:244px;
+    /* display: none; */
+}
+#hour,#minute,#second{
+    transform-origin: bottom;
+}
+@media screen and (max-width:500px){
+    #hour{
+        width:1vw;
+        height:8vh;
+        background-color: red;
+        position:absolute;
+        top:90px;
+        left:153px;
+        /* display: none; */
+    }
+    #minute{
+        width:1vw;
+        height:10vh;
+        background-color: aqua;
+        position:absolute;
+        top:74px;
+        left:153px;
+        /* display: none; */
+    }
+    #second{
+        width:1vw;
+        height:12vh;
+        background-color: white;
+        position:absolute;
+        top:57px;
+        left:153px;
+        /* display: none; */
+    }
+    #box{
+        width:80vw;
+        height:37.5vh;
+    }
+}
